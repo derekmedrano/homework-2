@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+}
+
+.header-name {
+    flex-grow: 8;
+
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+.about-me-item{
+    flex: 1 0 350px;
+}
+.about-me-item img {
+    max-width: 200px;
+    height: auto;
+}
+nav ul li {
+    display: inline;
+}
+
+
