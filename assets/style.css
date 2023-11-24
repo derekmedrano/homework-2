@@ -1,3 +1,8 @@
+:root {
+    --headfoot-background-color: black;
+    --background-color: gray; 
+    --text-color-1: #00B140; 
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,28 +16,91 @@ body {
 header {
     display: flex;
     justify-content: flex-end;
-    margin: 5%;
+    background-color: var(--headfoot-background-color);
 }
 
-.header-name {
+h1 {
     flex-grow: 8;
-
+    font-size: 3vw;
+    color: white;
+    
 }
+h2 {
+    color: white;
+}
+nav ul {
+    padding-top: 3%;
+}
+nav ul li {
+    display: inline;
+    font-size: 1.2vw;
+    padding: 20px;
+    color: var(--text-color-1);
+}
+
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1%;
+    font-size: 1vw;
+    background-color: var(--background-color);
 }
 .about-me-item{
     flex: 1 0 350px;
 }
 .about-me-item img {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
-}
-nav ul li {
-    display: inline;
+    margin-left: 15%;
+    border-style: solid;
+    border-width: thick;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+}
+
+.projects img {
+    width: 400px;
+    height: auto;
+    opacity: 0.3;
+}
+
+.projects img:hover {
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+
+.projects-card {
+    flex: 1 0 400px;
+    position: relative;
+    border-style: solid;
+    border-width: thick;
+}
+
+.projects-title {
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--headfoot-background-color);
+    padding: 10px;
+}
+
+.em {
+    color: var(--text-color-1);
+}
+
+footer {
+    background-color: var(--headfoot-background-color);
+}
+
+@media screen and (max-width:992){
+    width: 33%;
+}
+
+@media screen and (max-width:768){
+    width: 50%;
+}
 
