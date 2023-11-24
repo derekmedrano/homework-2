@@ -11,6 +11,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -58,7 +59,6 @@ nav ul li {
 }
 
 main {
-    height: 80%;
     padding-left: 1%;
     padding-right: 1%;
     background-color: var(--background-color);
@@ -70,8 +70,6 @@ main {
 }
 
 .projects img {
-    width: 850px;
-    height: auto;
     opacity: 0.3;
 }
 
@@ -82,7 +80,8 @@ main {
 }
 
 .projects-card {
-    flex: 1 0 4px;
+    /* flex: 1 0 0px; */
+    /* flex-shrink: 1; */
     position: relative;
     border-style: solid;
     border-width: thick;
@@ -103,7 +102,6 @@ footer {
     height: 5%;
     display: flex;
     justify-content: center;
-    /* position: fixed; */
     width: 100%;
     background-color: var(--headfoot-background-color);
 }
@@ -114,10 +112,10 @@ footer form {
 }
 
 @media screen and (max-width:992){
-    width: 33%;
+
 }
 
 @media screen and (max-width:768){
-    width: 50%;
+
 }
 
