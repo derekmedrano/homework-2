@@ -1,8 +1,9 @@
 :root {
     --headfoot-background-color: black;
-    --background-color: gray; 
-    --text-color-1: #00B140; 
+    --background-color: gray;
+    --text-color-1: #00B140;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,14 +26,17 @@ h1 {
     font-size: 2.5vw;
     color: white;
     padding-left: 5%;
-    
+
 }
+
 h2 {
     color: white;
 }
+
 nav ul {
     padding-top: 3%;
 }
+
 nav ul li {
     display: inline;
     font-size: 1.2vw;
@@ -46,18 +50,22 @@ nav ul li {
     justify-content: center;
     align-items: center;
     font-size: 1vw;
-    background-color: var(--background-color);
+    background-image: linear-gradient(45deg, black, transparent);
 }
-.about-me-item{
+
+.about-me-item {
     flex: 1 0 350px;
     padding-left: 5%;
+    color: white;
 }
+
 .about-me-item img {
     width: 14em;
     height: auto;
     margin-left: 22%;
     border-style: solid;
     border-width: thick;
+    border-color: black;
 }
 
 a:visited {
@@ -70,16 +78,24 @@ main {
     padding-right: 1%;
     background-color: var(--background-color);
 }
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--background-color);
     justify-content: space-around;
+    margin: 1%;
 }
 
 .projects img {
     opacity: 0.3;
-    width: 30em;
+    width: 100%;
     height: auto;
     /* filter: blur(8px); */
     -webkit-filter: blur(8px);
@@ -90,11 +106,33 @@ main {
     /* filter: none; */
     -webkit-filter: none;
     transition: 0.5s;
-    
+
+}
+
+.deployed-project {
+    width: 40em;
+    position: relative;
+    border-style: solid;
+    border-width: thick;
+    margin: 1%;
+}
+
+.deployed-project img {
+    opacity: 0.3;
+    width: 100%;
+    -webkit-filter: blur(8px);
+}
+
+.deployed-project img:hover {
+    opacity: 1;
+    /* filter: none; */
+    -webkit-filter: none;
+    transition: 0.5s;
+
 }
 
 .projects-card {
-    flex: 1 0 400px;
+    flex: 0 0 400px;
     position: relative;
     border-style: solid;
     border-width: thick;
@@ -115,25 +153,39 @@ footer {
     height: 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    min-height: 20vh;
     background-color: var(--headfoot-background-color);
 }
 
 footer form {
+    font-size: 1em;
     color: white;
     position: relative;
     padding-top: 1%;
 }
 
-@media screen and (max-width:992){
-.projects, .about-me {
-    width: 66%;
-}
-}
+@media screen and (max-width:992) {
 
-@media screen and (max-width:768){
-    .projects, .about-me {
-        width: 33%;
+    .projects,
+    .deployed-project,
+    #portfolio,
+    .about-me,
+    header,
+    footer {
+        width: 66%;
     }
 }
 
+@media screen and (max-width:768) {
+
+    .projects,
+    .about-me,
+    .deployed-project,
+    #portfolio,
+    header,
+    footer {
+        width: 33%;
+    }
+}
