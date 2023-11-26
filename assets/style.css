@@ -79,7 +79,8 @@ main {
 
 .projects img {
     opacity: 0.3;
-    width: 50em;
+    width: 30em;
+    height: auto;
     /* filter: blur(8px); */
     -webkit-filter: blur(8px);
 }
@@ -93,6 +94,7 @@ main {
 }
 
 .projects-card {
+    flex: 1 0 400px;
     position: relative;
     border-style: solid;
     border-width: thick;
@@ -124,13 +126,13 @@ footer form {
 }
 
 @media screen and (max-width:992){
-.projects, img {
+.projects, .about-me {
     width: 66%;
 }
 }
 
 @media screen and (max-width:768){
-    .projects, img {
+    .projects, .about-me {
         width: 33%;
     }
 }
