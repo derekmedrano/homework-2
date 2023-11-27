@@ -18,5 +18,12 @@ https://www.w3schools.com/css/default.asp
 master media queries and responsive css web design...
 https://www.youtube.com/watch?v=K24lUqcT0Ms
 
+_______ RESET SHEET  ________
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+
 ## License
 N/A

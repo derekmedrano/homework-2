@@ -34,7 +34,7 @@ h2 {
     color: var(--text-color1);
 }
 
-nav ul {
+nav ul, p {
     padding-top: 3%;
 }
 
@@ -50,14 +50,15 @@ nav ul li {
     width: 100%;
     display: flex;
     background-image: linear-gradient(45deg, black, transparent);
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
 }
 
 .about-me-item {
-/*    flex: 1 0 200px; */
+    text-wrap: wrap;
+    max-width: 30%;
     color: var(--text-color1);
-    font-size: 0.6vw;
+    font-size: 1rem;
 }
 
 .about-me-item img {
@@ -66,6 +67,7 @@ nav ul li {
     border-style: solid;
     border-width: thick;
     border-color: black;
+    margin-top: 2%;
 }
 
 a:visited {
@@ -93,6 +95,8 @@ main {
     margin: 1%;
 }
 
+/* Here the user interacts with the images, hovering over them reveales a full and clear image, rather than a
+blurry and translucent one, by default */
 .projects img {
     opacity: 0.3;
     width: 100%;
@@ -158,8 +162,6 @@ footer {
     background-color: var(--headfoot-background-color);
 }
 
-footer {}
-
 footer form {
     font-size: 1em;
     color: white;
@@ -167,12 +169,13 @@ footer form {
     padding-top: 1%;
 }
 
+/* Media Queries made for 6 different screen sizes from Extra-Extra Large down to Extra Small */
+
+/* 2XL */
 @media screen and (max-width: 1536px) {
 
     .projects,
     .deployed-project,
-    .about-me,
-    .about-me-item,
     header,
     main,
     footer {
@@ -185,12 +188,13 @@ footer form {
 
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 20px;
     }
 
 }
+
+/* XL */
 @media screen and (max-width: 1280px) {
 
     .projects,
@@ -208,12 +212,12 @@ footer form {
     
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 20px;
     }
 }
 
+/* L */
 @media screen and (max-wdith: 1024px) {
 
     .projects,
@@ -231,12 +235,12 @@ footer form {
 
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 18px;
     }
 }
 
+/* M */
 @media screen and (max-width: 768px) {
 
     .projects,
@@ -254,7 +258,6 @@ footer form {
 
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 16px;
     }
@@ -262,6 +265,7 @@ footer form {
     span
 }
 
+/* S */
 @media screen and (max-width: 640px) {
 
     .projects,
@@ -279,12 +283,12 @@ footer form {
 
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 16px;
     }
 }
 
+/* xs */
 @media screen and (max-width: 475px) {
 
     .projects,
@@ -304,7 +308,6 @@ footer form {
 
     h1, 
     nav,
-    .about-me-item,
     form {
         font-size: 16px;
     }
