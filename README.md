@@ -7,8 +7,16 @@
 ## Installation
 N/A
 ## Usage
+![Screenshot of Project](hwscreensh.jpg.png)
 
+User can see my information and work on previous projects all in a single page. Clicking the images will take the user to the respective websites. 
+Site is designed to be responsive and will change format depending on screen size.
 ## Credits
+w3schools
+https://www.w3schools.com/css/default.asp
+
+master media queries and responsive css web design...
+https://www.youtube.com/watch?v=K24lUqcT0Ms
 
 ## License
 N/A

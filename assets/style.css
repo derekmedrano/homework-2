@@ -18,16 +18,16 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
     background-color: var(--headfoot-background-color);
+    justify-content: space-around;
+    width: 100%;
 }
 
 h1 {
-    flex-grow: 8;
-    font-size: 2.5vw;
-    color: white;
+    flex-grow: 1;
+    font-size: 2vw;
+    color: var(--text-color1);
     padding-left: 5%;
-
 }
 
 h2 {
@@ -46,24 +46,23 @@ nav ul li {
 }
 
 .about-me {
-    height: 30%;
+    height: 25vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: linear-gradient(45deg, black, transparent);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-me-item {
-    flex: 1 0 350px;
-    padding-left: 5%;
+/*    flex: 1 0 200px; */
     color: var(--text-color1);
-    font-size: 1rem;
+    font-size: 0.6vw;
 }
 
 .about-me-item img {
-    width: 20em;
+    width: 15em;
     height: auto;
-    margin-left: 22%;
     border-style: solid;
     border-width: thick;
     border-color: black;
@@ -151,14 +150,15 @@ main {
 }
 
 footer {
-    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 20vh;
+    min-height: 10vh;
     background-color: var(--headfoot-background-color);
 }
+
+footer {}
 
 footer form {
     font-size: 1em;
@@ -172,11 +172,24 @@ footer form {
     .projects,
     .deployed-project,
     .about-me,
+    .about-me-item,
     header,
     main,
     footer {
         min-width: 1536px;
     }
+    
+    header{
+        flex-direction: column;
+    }
+
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 20px;
+    }
+
 }
 @media screen and (max-width: 1280px) {
 
@@ -187,6 +200,17 @@ footer form {
     main,
     footer {
         min-width: 1280px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+    
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 20px;
     }
 }
 
@@ -200,6 +224,17 @@ footer form {
     footer {
         min-width: 1024px;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -212,6 +247,19 @@ footer form {
     footer {
         min-width: 768px;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 16px;
+    }
+
+    span
 }
 
 @media screen and (max-width: 640px) {
@@ -224,6 +272,17 @@ footer form {
     footer {
         min-width: 640px;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 475px) {
@@ -235,5 +294,18 @@ footer form {
     main,
     footer {
         min-width: 475px;
+    }
+
+
+    header,
+    .about-me {
+        flex-direction: column;
+    }
+
+    h1, 
+    nav,
+    .about-me-item,
+    form {
+        font-size: 16px;
     }
 }
