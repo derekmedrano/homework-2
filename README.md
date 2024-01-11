@@ -1,13 +1,17 @@
 # <Portfolio>
 
 ## Description
-    This is a portfolio/landing page for all my scholarly and professional work. My motivation behind this project is not only to get a good grade I need, but more importantly to be able to use and build on it throughout my career. I now have a permanent place to store and showcase all my work.
-    I learned the value of using responisve elements, especially flexboxes and sizing elements.
+This is a portfolio/landing page for all my scholarly and professional work. My motivation behind this project is not only to get a good grade I need, but more importantly to be able to use and build on it throughout my career. I now have a permanent place to store and showcase all my work.
+I learned the value of using responisve elements, especially flexboxes and sizing elements.
+
+![Screenshot of Portfolio](assets/images/portfiloscreenshot.jpeg)
+
+    
 
 ## Installation
-N/A
+Portfolio is accessed through this link: https://derekmedrano.github.io/portfolio/
 ## Usage
-![Screenshot of Project](hwscreensh.jpg.png)
+
 
 User can see my information and work on previous projects all in a single page. Clicking the images will take the user to the respective websites. 
 Site is designed to be responsive and will change format depending on screen size.
