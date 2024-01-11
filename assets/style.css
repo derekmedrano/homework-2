@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
 
@@ -120,6 +120,7 @@ blurry and translucent one, by default */
     border-style: solid;
     border-width: thick;
     margin: 1%;
+    height: fit-content;
 }
 
 .deployed-project img {
@@ -141,6 +142,7 @@ blurry and translucent one, by default */
     position: relative;
     border-style: solid;
     border-width: thick;
+    height: fit-content;
 }
 
 .projects-title {
